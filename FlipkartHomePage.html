@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<title>Flipkart</title>
+		<!-- <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title> -->
+		<link rel="stylesheet" href="FlipkartNavbar.css" />
+
+		<link
+			rel="icon"
+			href="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png"
+		/>
+		<style>
+			.mySlides {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<img
+					src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+					alt="Flipkart"
+					width="75px"
+				/>
+				<p class="explore-color">
+					Explore <span class="plus-color">Plus </span
+					><img
+						src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+						alt="plus"
+						width="10px"
+					/>
+				</p>
+			</div>
+			<div class="search">
+				<input
+					type="text"
+					placeholder="Search for products, brands and more"
+					name=""
+					id=""
+				/>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+			<button class="login-btn" type="submit">Login</button>
+			<!-- <div class="become-a-seller"><a href="#">Become a Seller</a></div>
+			<div class="more"><a href="#">More</a></div>
+			<div class="cart">
+				<i class="fa-solid fa-cart-shopping"></i> <a href="#">Cart</a>
+			</div> -->
+			<div class="NavLink">
+				<a class="navlink" href="">Become a Seller</a
+				><a class="navlink" href=""
+					>More<i class="fa-solid fa-angle-down" id="angledown-icon"></i></a
+				><a class="navlink" href=""
+					><i class="fa-solid fa-cart-shopping" id="cart-icon"></i>Cart</a
+				>
+			</div>
+		</nav>
+		<!-- <div>
+			<div class="header">
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+						alt="Grocery"
+					/>
+					<p>Grocery</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+						alt="Mobiles"
+					/>
+					<p>Mobiles</p>
+				</div>
+
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100"
+						alt="Fashion"
+					/>
+					<p>Fashion</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+						alt="Electronics"
+					/>
+					<p>Electronics</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+						alt="Home"
+					/>
+					<p>Home</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+						alt="Appliances"
+					/>
+					<p>Appliances</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+						alt="Travel"
+					/>
+					<p>Travel</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+						alt="Top Offers"
+					/>
+					<p>Top Offers</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+						alt="Beauty, Toys & More"
+					/>
+					<p>Beauty, Toys & More</p>
+				</div>
+				<div class="header-img">
+					<img
+						src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100"
+						alt="Two Wheelers"
+					/>
+					<p>Two Wheelers</p>
+				</div>
+			</div>
+		</div> -->
+		<div class="head">
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+					alt="Grocery"
+				/>
+				<p>Grocery</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+					alt="Mobiles"
+				/>
+				<p>Mobiles</p>
+			</div>
+
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100"
+					alt="Fashion"
+				/>
+				<p>Fashion</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+					alt="Electronics"
+				/>
+				<p>Electronics</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+					alt="Home"
+				/>
+				<p>Home</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+					alt="Appliances"
+				/>
+				<p>Appliances</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+					alt="Travel"
+				/>
+				<p>Travel</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+					alt="Top Offers"
+				/>
+				<p>Top Offers</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+					alt="Beauty, Toys & More"
+				/>
+				<p>Beauty, Toys & More</p>
+			</div>
+			<div>
+				<img
+					src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100"
+					alt="Two Wheelers"
+				/>
+				<p>Two Wheelers</p>
+			</div>
+		</div>
+		<div class="w3-content w3-display-container">
+			<img
+				class="mySlides"
+				src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/c176b22443423a06.jpg?q=50  "
+			/>
+			<img
+				class="mySlides"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYBbMoqfoozOVMBGhRUlV2XhpDwc24UtdRTw&usqp=CAU"
+			/>
+
+			<img
+				class="mySlides"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtB8XM_eMacUl7qut7DfUuv19ytcJKQco7g&usqp=CAU"
+			/><img
+				class="mySlides"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaK_8wam0Z8beo5BU2OZ4dFFpfAVTan7wadQ&usqp=CAU"
+			/>
+			<img
+				class="mySlides"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6fiPo45VSDYJyuAjfmvlAoZLqWa4zihFBfg&usqp=CAU"
+				alt=""
+			/>
+
+			<button
+				id="right-carousel-btn"
+				class="w3-button w3-black w3-display-left"
+				onclick="plusDivs(-1)"
+			>
+				&#10094;
+			</button>
+			<button
+				id="left-carousel-btn"
+				class="w3-button w3-black w3-display-right"
+				onclick="plusDivs(1)"
+			>
+				&#10095;
+			</button>
+		</div>
+		<script>
+			var slideIndex = 1;
+			showDivs1(slideIndex);
+
+			function plusDivs(n) {
+				showDivs1((slideIndex += n));
+			}
+
+			function showDivs1(n) {
+				var i;
+				var x = document.getElementsByClassName('mySlides');
+				if (n > x.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = x.length;
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = 'none';
+				}
+				x[slideIndex - 1].style.display = 'block';
+			}
+		</script>
+
+		<div class="head-3">
+			<div id="wrapper">
+				<div id="carousel">
+					<div id="content">
+						<div class="head-3-box">
+							<div id="head-3-box-text"><p>Best of Electronics</p></div>
+							<button id="head-3-box-btn">VIEW ALL</button>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70"
+								alt="Grocery"
+							/>
+							<p id="head-3-box-title">Top Mirrorless Cameras</p>
+							<p id="head-3-box-price">From ₹2750</p>
+							<p id="head-3-box-detail">Canon, Sony, Fujifilm...</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/kdnf98w0/monitor/y/t/f/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.jpeg?q=70"
+								alt="Mobiles"
+							/>
+							<p id="head-3-box-title">Monitors</p>
+							<p id="head-3-box-price">SHOP NOW!</p>
+
+							<p id="head-3-box-detail">Top Rated</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/l1pc3gw0/power-bank/e/u/y/-original-imagd7dzan7sakt2.jpeg?q=70"
+								alt="Fashion"
+							/>
+							<p id="head-3-box-title">Power Bank</p>
+							<p id="head-3-box-price">From ₹799</p>
+
+							<p id="head-3-box-detail">Oneplus, Mi, Chroma...</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70"
+								alt="Electronics"
+							/>
+							<p id="head-3-box-title">Printer</p>
+							<p id="head-3-box-price">From ₹2500</p>
+							<p id="head-3-box-detail">HP</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/ks7tuvk0/gimbal/v/z/7/0-43-om4-se-dji-original-imag5u6rgsdh6k4g.jpeg?q=70"
+								alt="Home"
+							/>
+							<p id="head-3-box-title">Camera Accessories</p>
+							<p id="head-3-box-price">SHOP NOW!</p>
+
+							<p id="head-3-box-detail">Top Rated</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/kmp7ngw0/monitor/j/z/h/s2721hn-27-py0df-dell-original-imagfjphuywuh2a7.jpeg?q=70"
+								alt="Appliances"
+							/>
+							<p id="head-3-box-title">Monitors</p>
+							<p id="head-3-box-price">From ₹8299</p>
+							<p id="head-3-box-detail">Dell</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70"
+								alt="Travel"
+							/>
+							<p id="head-3-box-title">Best of Hair Dryers</p>
+							<p id="head-3-box-price">SHOP NOW!</p>
+
+							<p id="head-3-box-detail">Phillips</p>
+						</div>
+						<div>
+							<img
+								src="https://rukminim1.flixcart.com/image/200/200/kmp7ngw0/printer/i/m/f/lbp6030b-canon-original-imagfjeurfwphbjp.jpeg?q=70"
+								alt="Top Offers"
+							/>
+							<p id="head-3-box-title">Printer</p>
+							<p id="head-3-box-price">From ₹2499</p>
+							<p id="head-3-box-detail">Brother</p>
+						</div>
+					</div>
+				</div>
+				<button
+					id="next"
+					class="w3-button w3-black w3-display-left"
+					onclick="plusDivs(-1)"
+				>
+					<p id="carousel-arrow-next">&#10094;</p>
+				</button>
+				<button
+					id="prev"
+					class="w3-button w3-black w3-display-right"
+					onclick="plusDivs(1)"
+				>
+					<p id="carousel-arrow-prev">&#10095;</p>
+				</button>
+				<!-- <button id="prev">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+		>
+			<path fill="none" d="M0 0h24v24H0V0z" />
+			<path
+				d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+			/>
+		</svg>
+	</button>
+	<button id="next">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+		>
+			<path fill="none" d="M0 0h24v24H0V0z" />
+			<path
+				d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+			/>
+		</svg>
+	</button> -->
+			</div>
+		</div>
+		<script>
+			const gap = 16;
+
+			const carousel = document.getElementById('carousel'),
+				content = document.getElementById('content'),
+				next = document.getElementById('next'),
+				prev = document.getElementById('prev');
+
+			prev.addEventListener('click', (e) => {
+				carousel.scrollBy(width + gap, 0);
+				if (carousel.scrollWidth !== 0) {
+					next.style.display = 'flex';
+				}
+				if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+					prev.style.display = 'none';
+				}
+			});
+			next.addEventListener('click', (e) => {
+				carousel.scrollBy(-(width + gap), 0);
+				if (carousel.scrollLeft - width - gap <= 0) {
+					next.style.display = 'none';
+				}
+				if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+					prev.style.display = 'flex';
+				}
+			});
+
+			let width = carousel.offsetWidth;
+			window.addEventListener('resize', (e) => (width = carousel.offsetWidth));
+		</script>
+		<!-- 	<script>
+			const gap = 16;
+
+			const carousel = document.getElementById('carousel'),
+				content = document.getElementById('content'),
+				next = document.getElementById('next'),
+				prev = document.getElementById('prev');
+
+			next.addEventListener('click', (e) => {
+				carousel.scrollBy(width + gap, 0);
+				if (carousel.scrollWidth !== 0) {
+					prev.style.display = 'flex';
+				}
+				if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+					next.style.display = 'none';
+				}
+			});
+			prev.addEventListener('click', (e) => {
+				carousel.scrollBy(-(width + gap), 0);
+				if (carousel.scrollLeft - width - gap <= 0) {
+					prev.style.display = 'none';
+				}
+				if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+					next.style.display = 'flex';
+				}
+			});
+
+			let width = carousel.offsetWidth;
+			window.addEventListener('resize', (e) => (width = carousel.offsetWidth));
+		</script> -->
+	</body>
+</html>
