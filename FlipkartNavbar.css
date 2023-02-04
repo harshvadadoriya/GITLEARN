@@ -133,7 +133,7 @@ nav {
 	font-size: 30px;
 	font-weight: bold;
 	border: none;
-	border-radius: 5px;
+	border-radius: 5px 0px 0px 5px;
 	transform: translateY(-50%);
 }
 
@@ -146,7 +146,7 @@ nav {
 	font-size: 30px;
 	font-weight: bold;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0px 5px 5px 0px;
 	transform: translateY(-50%);
 }
 
@@ -180,9 +180,13 @@ nav {
 	/* margin-bottom: 10px; */
 }
 
+.head-3-main {
+	display: flex;
+}
+
 .head-3 {
-	width: 1498px;
-	margin: 10px 0px 0px 7px;
+	width: 1260px;
+	margin: 10px 0px 0px 0px;
 	/* margin-top: 15px;
 	margin-left: 9px; */
 	height: 344px;
@@ -224,7 +228,7 @@ nav {
 	align-content: center;
 	background: white;
 	padding: 8px;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	outline: 0;
 	cursor: pointer;
 	position: absolute;
@@ -243,7 +247,8 @@ nav {
 	transform: translate(50%, -50%);
 	display: none;
 	border: 1px solid rgb(255, 255, 255);
-	margin-left: 207px;
+	border-radius: 0px 5px 5px 0px;
+	margin-left: -25px;
 }
 
 #prev {
@@ -251,6 +256,7 @@ nav {
 	right: 0;
 	transform: translate(-50%, -50%);
 	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px 0px 0px 5px;
 	margin-right: -27px;
 }
 
@@ -290,8 +296,12 @@ nav {
 }
 
 .head-3-box {
-	height: 351px;
-	width: 232px;
+	height: 346px;
+	width: 238px;
+	margin-top: 10px;
+	margin-left: 8px;
+	border-top: 1px solid white;
+	box-shadow: 0 0 4px 0 rgb(0 0 0 / 15%);
 	/* border: 1px solid black; */
 	background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90');
 	background-repeat: no-repeat;
